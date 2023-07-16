@@ -14,7 +14,7 @@ router.post("/employees",async(req,res)=>{
         console.log(error);
     }
 })
-router.get('/dashboard',auth, async (req, res) => {
+router.get('/dashboard', async (req, res) => {
     try {
       const { pageination } = req.query;
       const Size = 5;
