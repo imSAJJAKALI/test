@@ -75,7 +75,7 @@ Router.post("/login", async (req, res) => {
     }
 })
 Router.get("/logout",auth,(req,res)=>{
-    blacklist.push(req.headers?.authorization?.split(" ")[1])
+    blacklist.push(req.headers?.authorization)
     res.send("logout successful")
     })
 
